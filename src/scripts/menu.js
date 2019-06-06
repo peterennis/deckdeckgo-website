@@ -76,44 +76,71 @@ presentHowItWorks = async () => {
 };
 
 openShare = async () => {
-    const webSocialShare = document.querySelector('web-social-share');
-
-    if (!webSocialShare || !window) {
-        return;
+    if (navigator && navigator.share) {
+        await shareMobile();
+    } else {
+        await shareDesktop();
     }
-
-    const share = {
-        displayNames: true,
-        config: [{
-            twitter: {
-                socialShareUrl: window.location.href,
-                socialSharePopupWidth: 300,
-                socialSharePopupHeight: 400
-            }
-        },{
-            reddit: {
-                socialShareUrl: window.location.href,
-                socialSharePopupWidth: 300,
-                socialSharePopupHeight: 500
-            }
-        },{
-            linkedin: {
-                socialShareUrl: window.location.href
-            }
-        },,{
-            email: {
-                socialShareBody: window.location.href
-            }
-        }, {
-            whatsapp: {
-                socialShareUrl: window.location.href
-            }
-        }]
-    };
-
-    webSocialShare.share = share;
-
-    webSocialShare.show = true;
 
     await document.querySelector('ion-popover-controller').dismiss();
 };
+
+function shareMobile() {
+    return new Promise(async (resolve) => {
+        const shareUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+
+        await navigator.share({
+            title: document.title,
+            url: shareUrl,
+        });
+
+        resolve();
+    });
+}
+
+function shareDesktop() {
+    return new Promise(async (resolve) => {
+        const webSocialShare = document.querySelector('web-social-share');
+
+        if (!webSocialShare || !window) {
+            return;
+        }
+
+        const shareUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
+
+        const share = {
+            displayNames: true,
+            config: [{
+                twitter: {
+                    socialShareUrl: shareUrl,
+                    socialSharePopupWidth: 300,
+                    socialSharePopupHeight: 400
+                }
+            },{
+                reddit: {
+                    socialShareUrl: shareUrl,
+                    socialSharePopupWidth: 300,
+                    socialSharePopupHeight: 500
+                }
+            },{
+                linkedin: {
+                    socialShareUrl: shareUrl
+                }
+            },{
+                email: {
+                    socialShareBody: shareUrl
+                }
+            }, {
+                whatsapp: {
+                    socialShareUrl: shareUrl
+                }
+            }]
+        };
+
+        webSocialShare.share = share;
+
+        webSocialShare.show = true;
+
+        resolve();
+    });
+}
