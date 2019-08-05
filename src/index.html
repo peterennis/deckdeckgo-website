@@ -234,20 +234,10 @@
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
-        <ion-fab-button>
-            <ion-icon name="apps"></ion-icon>
-        </ion-fab-button>
-        <ion-fab-list side="start">
-            <ion-fab-button class="hide-on-mobile" color="primary" onclick="toggleFullScreen()"><ion-icon name="expand" ariaLabel="Full screen"></ion-icon></ion-fab-button>
-            <ion-fab-button color="primary" onclick="presentSlidePicker()"><ion-icon name="list" md="md-list" ios="md-list" ariaLabel="Jump to a particular slide"></ion-icon></ion-fab-button>
-            <ion-fab-button color="primary" onclick="nextSlide()"><ion-icon name="arrow-forward" ariaLabel="Next slide"></ion-icon></ion-fab-button>
-            <ion-fab-button color="primary" onclick="previousSlide()"><ion-icon name="arrow-back" ariaLabel="Previous slide"></ion-icon></ion-fab-button>
-        </ion-fab-list>
-        <ion-fab-list side="top">
-            <ion-fab-button id="buttonSlideNotes" color="primary" onclick="displaySlideNotes()" ariaLabel="Display slide notes"><ion-icon name="clipboard"></ion-icon></ion-fab-button>
-            <ion-fab-button class="hide-on-mobile" color="primary" onclick="doPrint()"><ion-icon name="print" ariaLabel="Print presentation"></ion-icon></ion-fab-button>
-            <ion-fab-button color="primary" onclick="displayRemoteControl()"><ion-icon name="phone-portrait" ariaLabel="Remote control"></ion-icon></ion-fab-button>
-        </ion-fab-list>
+        <ion-fab-button color="primary" size="small" onclick="previousSlide()"><ion-icon name="arrow-back" ariaLabel="Previous slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button color="primary" size="small" onclick="nextSlide()"><ion-icon name="arrow-forward" ariaLabel="Next slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button color="primary" size="small" onclick="presentSlidePicker()"><ion-icon name="list" md="md-list" ios="md-list" ariaLabel="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button class="hide-on-mobile" color="primary" size="small" onclick="toggleFullScreen()"><ion-icon name="expand" ariaLabel="Full screen" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
     </ion-fab>
 
     <!-- Ionic components anchors -->
@@ -256,11 +246,11 @@
     <ion-alert-controller></ion-alert-controller>
 
     <web-social-share show="false" style="--web-social-share-backdrop-opacity: 0.5;">
-        <ion-icon name="logo-twitter" slot="twitter" style="color: #00aced; width: 1.4rem; height: 1.4rem;"></ion-icon>
-        <ion-icon name="logo-reddit" slot="reddit" style="width: 1.4rem; height: 1.4rem;"></ion-icon>
-        <ion-icon name="logo-linkedin" slot="linkedin" style="color: #0077b5; width: 1.4rem; height: 1.4rem;"></ion-icon>
-        <ion-icon name="mail" slot="email" style="color: #ff8ea3; width: 1.4rem; height: 1.4rem;"></ion-icon>
-        <ion-icon name="logo-whatsapp" slot="whatsapp" style="color: #25D366; width: 1.4rem; height: 1.4rem;"></ion-icon>
+        <ion-icon name="logo-twitter" slot="twitter" style="color: #00aced; font-size: 1.6rem; display: block;"></ion-icon>
+        <ion-icon name="logo-reddit" slot="reddit" style="font-size: 1.6rem; display: block;"></ion-icon>
+        <ion-icon name="logo-linkedin" slot="linkedin" style="color: #0077b5; font-size: 1.6rem; display: block;"></ion-icon>
+        <ion-icon name="mail" slot="email" style="color: #ff8ea3; font-size: 1.6rem; display: block;"></ion-icon>
+        <ion-icon name="logo-whatsapp" slot="whatsapp" style="color: #25D366; font-size: 1.6rem; display: block;"></ion-icon>
     </web-social-share>
 </ion-app>
 
