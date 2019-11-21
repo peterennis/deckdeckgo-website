@@ -13,8 +13,8 @@
 
     <meta name="author" content="David Dal Busco">
 
-    <meta name="description" content="The Progressive Web App alternative for simple presentations. DeckDeckGo let you create without effort your slides and allows you to add some extra interactive features. Moreover, DeckDeckGo bundles your presentation with services workers letting you publish it online with an offline support and could be controlled with a remote progressive web app control.">
-    <meta property="og:description" content="The Progressive Web App alternative for simple presentations.">
+    <meta name="description" content="The web open source editor for presentations. DeckDeckGo let you create without effort your slides and allows you to add some extra interactive features. Moreover, DeckDeckGo bundles your presentation with services workers letting you publish it online with an offline support and could be controlled with a remote progressive web app control.">
+    <meta property="og:description" content="The web open source editor for presentations.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://deckdeckgo.com">
@@ -61,7 +61,6 @@
     <style>
         /* Until Web Components are loaded, don't display content */
         body {
-            background: #3880ff;
         }
 
         ion-app.loading, ion-app.loading a {
@@ -89,7 +88,7 @@
             <deckgo-slide-title>
                 <h1 slot="title">DeckDeckGo</h1>
                 <div no-shadow slot="content">
-                    <h3 style="margin: 0;">The open source <strong>editor</strong> for PWA presentations</h3>
+                    <h3 style="margin: 0;">The web open source <strong>editor</strong> for presentations</h3>
 
                     <h2 style="margin: 0;">👉</h2>
                 </div>
@@ -99,10 +98,10 @@
                 <h3 slot="title">Edit your deck anywhere, display it everywhere</h3>
                 <div no-shadow slot="content" style="max-width: 100%;">
                     <div padding-top style="display: flex; align-items: center; justify-content: center;">
-                        <ion-icon padding style="font-size: 4rem" src="./assets/img/mobile-light.svg"></ion-icon>
-                        <ion-icon padding style="font-size: 6rem" src="./assets/img/tablet-light.svg"></ion-icon>
-                        <ion-icon padding style="font-size: 6.6rem" src="./assets/img/desktop-light.svg"></ion-icon>
-                        <ion-icon padding style="font-size: 6.6rem" src="./assets/img/projector.svg"></ion-icon>
+                        <ion-icon padding style="font-size: 4rem" src="https://demo.deckdeckgo.com/assets/img/mobile-light.svg"></ion-icon>
+                        <ion-icon padding style="font-size: 6rem" src="https://demo.deckdeckgo.com/assets/img/tablet-light.svg"></ion-icon>
+                        <ion-icon padding style="font-size: 6.6rem" src="https://demo.deckdeckgo.com/assets/img/desktop-light.svg"></ion-icon>
+                        <ion-icon padding style="font-size: 6.6rem" src="https://demo.deckdeckgo.com/assets/img/projector.svg"></ion-icon>
                     </div>
                 </div>
             </deckgo-slide-title>
@@ -110,13 +109,11 @@
             <deckgo-slide-split style="color: var(--ion-color-dark); --slide-split-color-start: var(--ion-color-light); --slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-dark); --slide-split-background-start: var(--ion-color-dark)">
                 <h1 slot="title">Keep in touch</h1>
                 <div slot="start">
-                    <p style="font-size: 2em;">Coming soon...</p>
+                    <p style="font-size: 2em;">Join our Newsletter 👋</p>
                 </div>
                 <div slot="end" style="text-align: center; width: 100%;">
-                    <p style="font-size: 1.2em;">Join the beta testers 🔥</p>
-
                     <!-- Begin Mailchimp Signup Form -->
-                    <form action="https://deckdeckgo.us20.list-manage.com/subscribe/post?u=9b5f83c6cb1006ea8f7225ccb&amp;id=264e8d156c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                    <form action="https://deckdeckgo.us20.list-manage.com/subscribe/post?u=9b5f83c6cb1006ea8f7225ccb&amp;id=3a584996fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                         <div id="mc_embed_signup_scroll">
                             <div margin-top margin-bottom>
                                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email" style="width: 100%; padding: 8px 0; text-indent: 2%; border: 1px solid #ABB0B2; border-radius: 4px;">
@@ -138,15 +135,11 @@
                 </div>
             </deckgo-slide-split>
 
-            <deckgo-slide-title style="--background: white; --color: black; --ion-item-background: white;">
-                <h2 slot="title">Meanwhile, here are some other features 👉</h2>
-            </deckgo-slide-title>
-
             <deckgo-slide-split style="color: var(--ion-color-tertiary); --slide-split-color-start: white; --slide-split-align: center; --slide-split-text-align: center; --slide-split-background-end: white; --slide-split-color-end: var(--ion-color-tertiary);">
                 <h1 slot="title">Progressive Web App</h1>
-                <h4 slot="start" style="margin: 0;">Publish your presentation as a <strong>Progressive Web App</strong> with <strong>offline</strong> support</h4>
+                <h3 slot="start" style="margin: 0; color: black;">Publish your presentation as a <strong>Progressive Web App</strong></h3>
                 <div slot="end" style="text-align: center; width: 100%;">
-                    <img data-src="./assets/img/deckdeckgo-homecoming.png" style="width: 20vw;" alt="Publish your presentation as a Progressive Web App with offline support"/>
+                    <img data-src="https://demo.deckdeckgo.com/assets/img/deckdeckgo-homecoming.png" style="width: 20vw;" alt="Publish your presentation as a Progressive Web App with offline support"/>
                 </div>
             </deckgo-slide-split>
 
@@ -162,7 +155,7 @@
                 </div>
                 <div slot="social-link"><deckgo-social twitter="daviddalbusco"><ion-icon area-label="David on Twitter" slot="icon" name="logo-twitter"></ion-icon> twitter</deckgo-social></div>
                 <div slot="social-link"><deckgo-social linkedin="david-dal-busco/"><ion-icon area-label="David on Linkedin" slot="icon" name="logo-linkedin"></ion-icon> linkedin</deckgo-social></div>
-                <div slot="social-link"><deckgo-social medium="david.dalbusco"><img style="width: 1em;" area-label="David on Medium" slot="icon" src="assets/img/medium-icon.svg"/> medium</deckgo-social></div>
+                <div slot="social-link"><deckgo-social medium="david.dalbusco"><img style="width: 1em;" area-label="David on Medium" slot="icon" src="https://demo.deckdeckgo.com/assets/icons/medium.svg"/> medium</deckgo-social></div>
             </deckgo-slide-author>
 
             <deckgo-slide-gif style="background: white;" src="https://media.giphy.com/media/xUA7baWfTjfHGLZc3e/giphy.gif" alt="Template for gif" fullscreen="true">
@@ -177,7 +170,7 @@
                 <h3 slot="title">Or the template for charts</h3>
             </deckgo-slide-chart>
 
-            <deckgo-slide-code src="./assets/code/deckdeckgo-slide-code-example.txt" style="--code-margin-bottom: 6rem; --background: var(--ion-color-dark); --color: var(--ion-color-light); --code-color: var(--ion-color-light);">
+            <deckgo-slide-code src="https://demo.deckdeckgo.com/assets/code/deckdeckgo-slide-code-example.txt" style="--code-margin-bottom: 6rem; --background: var(--ion-color-dark); --color: var(--ion-color-light); --code-color: var(--ion-color-light);">
                 <h2 slot="title">Showcase your code</h2>
 
                 <div slot="info" padding style="--deckgo-show-info-background: rgba(var(--ion-color-dark-rgb), 0.8)">
@@ -193,7 +186,7 @@
                 </p>
             </deckgo-slide-title>
 
-            <deckgo-slide-qrcode content="https://deckdeckgo.com" style="--deckgo-qrcode-color-fill: white;">
+            <deckgo-slide-qrcode content="https://deckdeckgo.com">
                 <h1 slot="title">QR Code</h1>
                 <p slot="content">Display a QR code to let your audience get your slides as a PWA without any delay</p>
             </deckgo-slide-qrcode>
@@ -203,7 +196,7 @@
                 <div slot="content">
                     <p>Add any <strong>Ionic</strong> components to your presentation</p>
                     <div padding-top>
-                        <ion-button onclick="presentModal()" shape="round" size="large">Like this button</ion-button>
+                        <ion-button onclick="presentModal()" shape="round" size="large" color="tertiary">Like this button</ion-button>
                     </div>
                 </div>
             </deckgo-slide-title>
@@ -225,7 +218,7 @@
 
             <!-- END: Your slides -->
 
-            <a href="#" onclick="openMenu(event)" slot="actions" style="color: inherit;"><ion-icon name="more"></ion-icon></a>
+            <a href="#" slot="actions" onclick="openMenu(event)" style="color: inherit;"><ion-icon name="more"></ion-icon></a>
 
         </deckgo-deck>
 
