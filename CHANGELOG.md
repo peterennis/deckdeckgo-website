@@ -1,3 +1,25 @@
+<a name="1.0.0-rc.4-7"></a>
+# [1.0.0-rc.4-7](https://github.com/deckgo/deckdeckgo-website/compare/v1.0.0-rc.4-6...v1.0.0-rc.4-7) (2020-01-08)
+
+### Features
+
+* use new component `<deckgo-youtube/>`
+
+<a name="1.0.0-rc.4-6"></a>
+# [1.0.0-rc.4-6](https://github.com/deckgo/deckdeckgo-website/compare/v1.0.0-rc.4-5...v1.0.0-rc.4-6) (2020-01-05)
+
+### Features
+
+* new slide `author` design
+
+<a name="1.0.0-rc.4-5"></a>
+# [1.0.0-rc.4-5](https://github.com/deckgo/deckdeckgo-website/compare/v1.0.0-rc.4-4...v1.0.0-rc.4-5) (2020-01-04)
+
+### Features
+
+* use new component `<deckgo-social/>`
+* update `author` slide ("flex-wrap")
+
 <a name="1.0.0-rc.4-4"></a>
 # [1.0.0-rc.4-4](https://github.com/deckgo/deckdeckgo-website/compare/v1.0.0-rc.4-3...v1.0.0-rc.4-4) (2019-12-13)
 
