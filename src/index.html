@@ -6,21 +6,37 @@
 
     <base href="/"/>
 
-    <title>DeckDeckGo</title>
+    <title>DeckDeckGo – The web open source editors for presentations</title>
 
-    <meta property="og:site_name" content="DeckDeckGo">
-    <meta property="og:title" content="DeckDeckGo">
+    <meta
+            name="description"
+            content="Make more than presentations. Create, present and share apps. Interact with your audience. With DeckDeckGo, edit your slides anywhere, display them everywhere."
+    />
 
-    <meta name="author" content="David Dal Busco">
+    <meta
+            property="og:description"
+            content="Make more than presentations. Create, present and share apps. Interact with your audience. With DeckDeckGo, edit your slides anywhere, display them everywhere."
+    />
+    <meta property="og:site_name" content="DeckDeckGo" />
+    <meta property="og:title" content="The web open source editor for presentations" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://deckdeckgo.com" />
+    <meta property="og:image" content="https://deckdeckgo.com/assets/meta/deckdeckgo-meta.png" />
+    <meta property="og:image:type" content="image/png" />
 
-    <meta name="description" content="The web open source editor for presentations. DeckDeckGo let you create without effort your slides and allows you to add some extra interactive features. Moreover, DeckDeckGo bundles your presentation with services workers letting you publish it online with an offline support and could be controlled with a remote progressive web app control.">
-    <meta property="og:description" content="The web open source editor for presentations.">
+    <meta name="twitter:site" content="@deckdeckgo" />
+    <meta name="twitter:creator" content="@deckdeckgo" />
+    <meta name="twitter:title" content="DeckDeckGo" />
+    <meta
+            name="twitter:description"
+            content="Make more than presentations. Create, present and share apps. Interact with your audience. Edit your slides anywhere."
+    />
+    <meta name="twitter:image:src" content="https://deckdeckgo.com/assets/meta/deckdeckgo-meta.png" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://deckdeckgo.com">
+    <meta name="author" content="DeckDeckGo" />
 
-    <meta property="og:image" content="https://deckdeckgo.com/assets/img/deckdeckgo.png">
-    <meta property="og:image:type" content="image/png">
+    <link rel="canonical" href="https://deckdeckgo.com" />
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -227,7 +243,7 @@
 
             <!-- END: Your slides -->
 
-            <a href="#" slot="actions" onclick="openMenu(event)" style="color: inherit;"><ion-icon name="more"></ion-icon></a>
+            <button slot="actions" style="color: inherit; outline: none; background: transparent; border-color: transparent;"><ion-icon name="more"></ion-icon></button>
 
         </deckgo-deck>
 
@@ -236,13 +252,13 @@
     </ion-content>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed" id="navigation">
-        <ion-fab-button id="play" color="primary" size="small" onclick="playPause('play', true)" style="display: none;"><ion-icon name="play" ariaLabel="Play video" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button id="pause" color="primary" size="small" onclick="playPause('pause', true)" style="display: none;"><ion-icon name="pause" ariaLabel="Pause video" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button id="play" color="primary" size="small" style="display: none;"><ion-icon name="play" ariaLabel="Play video" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button id="pause" color="primary" size="small" style="display: none;"><ion-icon name="pause" ariaLabel="Pause video" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
 
-        <ion-fab-button color="primary" size="small" onclick="previousSlide()"><ion-icon name="arrow-back" ariaLabel="Previous slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button color="primary" size="small" onclick="nextSlide()"><ion-icon name="arrow-forward" ariaLabel="Next slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button color="primary" size="small" onclick="presentSlidePicker()"><ion-icon name="list" md="md-list" ios="md-list" ariaLabel="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
-        <ion-fab-button class="hide-on-mobile" color="primary" size="small" onclick="toggleFullScreen()"><ion-icon name="expand" ariaLabel="Full screen" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button id="previous" color="primary" size="small"><ion-icon name="arrow-back" ariaLabel="Previous slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button id="next" color="primary" size="small"><ion-icon name="arrow-forward" ariaLabel="Next slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button id="slidePicker" color="primary" size="small"><ion-icon name="list" md="md-list" ios="md-list" ariaLabel="Jump to a particular slide" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
+        <ion-fab-button id="fullScreen" class="hide-on-mobile" color="primary" size="small"><ion-icon name="expand" ariaLabel="Full screen" style="font-size: 1.4em;"></ion-icon></ion-fab-button>
     </ion-fab>
 
     <!-- Ionic components anchors -->
