@@ -1,3 +1,17 @@
+<a name="1.0.0-rc.5"></a>
+# [1.0.0-rc.5](https://github.com/deckgo/deckdeckgo-website/compare/v1.0.0-rc.4-9...v1.0.0-rc.5) (2020-02-14)
+
+### Features
+
+* upgrade to Ionic v5
+* update meta tags
+* add share to Hacker News
+* menu icon size
+
+### Fix
+
+* actions color
+
 <a name="1.0.0-rc.4-9"></a>
 # [1.0.0-rc.4-9](https://github.com/deckgo/deckdeckgo-website/compare/v1.0.0-rc.4-8...v1.0.0-rc.4-9) (2020-01-20)
 
