@@ -3,7 +3,7 @@ name: CI - Demo
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -32,10 +32,11 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: dist
+          path: dist
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: "default"
+          PROJECT_ID: 'default'
